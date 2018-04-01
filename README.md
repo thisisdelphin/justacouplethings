@@ -1,0 +1,2 @@
+# justacouplethings
+a blog
