@@ -1,5 +1,16 @@
 div {
   background: beige;
+  margin: 8px;
+}
+header {
+  background: azure;
+  padding: 48px;
+}
+
+#alaune {
+  background: cornflowerblue;
+  margin: 8px;
+  padding: 40px;
 }
 
 #categories {
@@ -8,6 +19,7 @@ div {
 }
 
 #wanderlust {
+  background: LavenderBlush;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
