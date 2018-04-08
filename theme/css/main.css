@@ -17,6 +17,14 @@ article {
   margin: 8px;
   padding: 40px;
 }
+#alaune .big {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+#alaune img {
+  grid-column: 1 / 3;
+}
 
 #categories .container {
   display: grid;

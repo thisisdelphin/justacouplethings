@@ -16,6 +16,17 @@ article {
   background: cornflowerblue;
   margin: 8px;
   padding: 40px;
+
+  .big {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+  }
+
+  img {
+    grid-column: 1 / 3;
+  }
+
 }
 
 #categories {
@@ -60,7 +71,7 @@ article {
 
 #all-articles {
   grid-column: 1 / 3;
-} 
+}
 
 footer {
   background: SlateGray;
