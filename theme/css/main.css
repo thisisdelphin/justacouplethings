@@ -47,6 +47,22 @@ article {
 #wanderlust .intro {
   grid-column: 1 / 3;
 }
+#wanderlust .wanderlust {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+#wanderlust .wanderlust img, #wanderlust .wanderlust .content {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+#wanderlust .wanderlust img {
+  z-index: 1;
+}
+#wanderlust .wanderlust .content {
+  z-index: 2;
+  border: 1px solid blue;
+}
 
 #second-level .container {
   display: grid;
