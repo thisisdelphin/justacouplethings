@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Raleway:400,400i,700,700i,900,900i');
+
+$prune: #3c0d21;
+$brique: #ca534d;
+$beige: #fceceb;
+$blanc: #fff;
+$noir: #000;
+$anthracite: #333;
+
+
 html {
   font-size: 50%;
 }
@@ -5,6 +15,9 @@ html {
 body {
   font-size: 2rem;
   line-height: 3rem;
+  font-family: 'Raleway', sans-serif;
+  background-color: $beige;
+  color: $prune;
 }
 
 img {
@@ -22,16 +35,18 @@ p.date { font-size: 1.5rem; line-height: 2rem;}
 }
 
 header {
-  background: azure;
+  background: $prune;
+  color: $beige;
   padding: 48px;
 }
 
 article {
-  border: 3px solid crimson;
+  // border: 3px solid crimson;
 }
 
 #alaune {
-  background: cornflowerblue;
+  background: $prune;
+  color: $beige;
   margin: 8px;
   padding: 40px;
 
@@ -53,16 +68,34 @@ article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
+    .cat {
+
+      .intro {
+        background: $beige;
+        color: $prune;
+        h1,h2,h3,h4,h5,h6 {
+          color: $brique;
+        }
+      }
+      background: $brique;
+      color: $beige;
+      h1,h2,h3,h4,h5,h6 {
+        color: $beige;
+      }
+    }
   }
 
   .cat-sm {
     display: grid;
     grid-template-columns: 1fr 3fr;
   }
+
+
 }
 
 #wanderlust {
-  background: LavenderBlush;
+  background: $prune;
+  color: $beige;
 
   .container {
     display: grid;
@@ -87,7 +120,7 @@ article {
     }
     .content {
       z-index: 2;
-      border: 1px solid blue;
+      // border: 1px solid blue;
     }
   }
 }
@@ -111,4 +144,11 @@ article {
 footer {
   background: SlateGray;
   color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
+  color: $brique;
 }

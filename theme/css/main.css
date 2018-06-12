@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Raleway:400,400i,700,700i,900,900i");
 html {
   font-size: 50%;
 }
@@ -5,6 +6,9 @@ html {
 body {
   font-size: 2rem;
   line-height: 3rem;
+  font-family: 'Raleway', sans-serif;
+  background-color: #fceceb;
+  color: #3c0d21;
 }
 
 img {
@@ -42,16 +46,14 @@ p.date {
 }
 
 header {
-  background: azure;
+  background: #3c0d21;
+  color: #fceceb;
   padding: 48px;
 }
 
-article {
-  border: 3px solid crimson;
-}
-
 #alaune {
-  background: cornflowerblue;
+  background: #3c0d21;
+  color: #fceceb;
   margin: 8px;
   padding: 40px;
 }
@@ -69,13 +71,28 @@ article {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
 }
+#categories .container .cat {
+  background: #ca534d;
+  color: #fceceb;
+}
+#categories .container .cat .intro {
+  background: #fceceb;
+  color: #3c0d21;
+}
+#categories .container .cat .intro h1, #categories .container .cat .intro h2, #categories .container .cat .intro h3, #categories .container .cat .intro h4, #categories .container .cat .intro h5, #categories .container .cat .intro h6 {
+  color: #ca534d;
+}
+#categories .container .cat h1, #categories .container .cat h2, #categories .container .cat h3, #categories .container .cat h4, #categories .container .cat h5, #categories .container .cat h6 {
+  color: #fceceb;
+}
 #categories .cat-sm {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
 
 #wanderlust {
-  background: LavenderBlush;
+  background: #3c0d21;
+  color: #fceceb;
 }
 #wanderlust .container {
   display: grid;
@@ -99,7 +116,6 @@ article {
 }
 #wanderlust .wanderlust .content {
   z-index: 2;
-  border: 1px solid blue;
 }
 
 #second-level .container {
@@ -117,6 +133,13 @@ article {
 footer {
   background: SlateGray;
   color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
+  color: #ca534d;
 }
 
 /*# sourceMappingURL=main.css.map */
