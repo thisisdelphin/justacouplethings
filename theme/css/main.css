@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Raleway:400,400i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,700,900&subset=latin-ext");
 html {
   font-size: 50%;
 }
@@ -6,9 +6,9 @@ html {
 body {
   font-size: 2rem;
   line-height: 3rem;
-  font-family: 'Raleway', sans-serif;
-  background-color: #fceceb;
-  color: #3c0d21;
+  font-family: 'Lato', sans-serif;
+  background-color: #F6F1F1;
+  color: #5E5E5E;
 }
 
 img {
@@ -38,6 +38,8 @@ p {
 p.date {
   font-size: 1.5rem;
   line-height: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
 }
 
 .container {
@@ -46,14 +48,37 @@ p.date {
 }
 
 header {
-  background: #3c0d21;
-  color: #fceceb;
+  background: #F6F1F1;
+  color: #5E5E5E;
   padding: 48px;
+}
+header h1 {
+  color: #09B2BD;
+}
+
+nav {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 20px;
+  position: fixed;
+  top: 0;
+  background: #F6F1F1;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  width: 100%;
+}
+nav li {
+  display: inline-block;
+  grid: 1/8;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin: 2rem;
 }
 
 #alaune {
-  background: #3c0d21;
-  color: #fceceb;
   margin: 8px;
   padding: 40px;
 }
@@ -62,37 +87,36 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
 }
+#alaune .big h1 {
+  color: #333;
+}
 #alaune img {
   grid-column: 1 / 3;
 }
 
 #categories .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   grid-column-gap: 20px;
 }
 #categories .container .cat {
-  background: #ca534d;
-  color: #fceceb;
+  background: #09B2BD;
+  color: #F6F1F1;
 }
 #categories .container .cat .intro {
-  background: #fceceb;
-  color: #3c0d21;
+  background: #F6F1F1;
+  color: #09B2BD;
 }
 #categories .container .cat .intro h1, #categories .container .cat .intro h2, #categories .container .cat .intro h3, #categories .container .cat .intro h4, #categories .container .cat .intro h5, #categories .container .cat .intro h6 {
-  color: #ca534d;
+  color: #09B2BD;
 }
 #categories .container .cat h1, #categories .container .cat h2, #categories .container .cat h3, #categories .container .cat h4, #categories .container .cat h5, #categories .container .cat h6 {
-  color: #fceceb;
-}
-#categories .cat-sm {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  color: #F6F1F1;
 }
 
 #wanderlust {
-  background: #3c0d21;
-  color: #fceceb;
+  background: #30393D;
+  color: #F6F1F1;
 }
 #wanderlust .container {
   display: grid;
@@ -137,9 +161,13 @@ footer {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
-  font-style: italic;
   font-weight: 900;
-  color: #ca534d;
+  color: #09B2BD;
+}
+
+a {
+  color: #FF5C00;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
