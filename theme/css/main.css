@@ -47,6 +47,12 @@ p.date {
   margin: 0 auto;
 }
 
+button {
+  background: #09B2BD !important;
+  color: #fff !important;
+  padding: 1rem .5rem;
+}
+
 header {
   display: grid;
   top: 7rem;
@@ -106,6 +112,7 @@ nav ul li:hover {
 }
 #alaune .big h1 {
   color: #333;
+  margin-left: -12rem;
 }
 #alaune img {
   grid-column: 1 / 3;

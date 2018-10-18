@@ -36,6 +36,12 @@ p.date { font-size: 1.5rem; line-height: 2rem; text-transform: uppercase; letter
   margin: 0 auto;
 }
 
+button {
+  background: $hotelblue!important;
+  color: $blanc!important;
+  padding: 1rem .5rem;
+}
+
 header {
   display: grid;
   top: 7rem;
@@ -92,7 +98,7 @@ article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
-    h1 { color: $anthracite;}
+    h1 { color: $anthracite; margin-left: -12rem;}
   }
 
   img {
