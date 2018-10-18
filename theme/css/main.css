@@ -34,8 +34,11 @@ p {
   font-size: 2rem;
   line-height: 3rem;
 }
+p .surtitre {
+  margin-bottom: 2rem;
+}
 
-p.date {
+p.date, p.surtitre {
   font-size: 1.5rem;
   line-height: 2rem;
   text-transform: uppercase;
@@ -84,8 +87,10 @@ nav {
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
-nav ul .selected {
-  border-bottom: solid 3px #FF5C00;
+nav ul {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 0;
 }
 nav ul li {
   display: inline-block;
@@ -93,17 +98,37 @@ nav ul li {
   line-height: 2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  padding: 2rem;
+  padding: 2rem 0;
+  margin: 0 2rem;
   text-align: center;
 }
-nav ul li:hover {
+nav .primaryNav {
+  color: #333;
+  float: left;
+}
+nav .primaryNav .selected {
+  border-bottom: solid 3px #FF5C00;
+}
+nav .primaryNav li:hover {
   color: #FF5C00;
   border-bottom: solid 3px #FF5C00;
 }
+nav .secondaryNav {
+  color: rgba(51, 51, 51, 0.5);
+  float: right;
+}
+nav .secondaryNav .selected {
+  border-bottom: solid 3px #333;
+}
+nav .secondaryNav li:hover {
+  color: #333;
+  border-bottom: solid 3px #333;
+}
 
 #alaune {
-  margin: 8px;
-  padding: 40px;
+  padding-top: 5rem;
+  z-index: 50;
+  position: relative;
 }
 #alaune .big {
   display: grid;
@@ -141,6 +166,16 @@ nav ul li:hover {
 #wanderlust {
   background: #30393D;
   color: #F6F1F1;
+  height: 78rem;
+  -webkit-clip-path: polygon(0 0, 100% 9rem, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 9rem, 100% 100%, 0 100%);
+  margin-top: -7rem;
+  padding-top: 12rem;
+}
+#wanderlust h2 {
+  color: #FF5C00;
+  font-size: 7rem;
+  line-height: 8rem;
 }
 #wanderlust .container {
   display: grid;
