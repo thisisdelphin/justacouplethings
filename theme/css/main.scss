@@ -37,29 +37,48 @@ p.date { font-size: 1.5rem; line-height: 2rem; text-transform: uppercase; letter
 }
 
 header {
-  background: $beige;
+  display: grid;
+  top: 7rem;
+  background-image: linear-gradient(to bottom, $beige, rgba(246, 241, 241, 0.1)), url("../waves.jpg");
+  background-size: cover;
   color: $grey;
-  padding: 48px;
+  .container {
+    align-self: center;
+    justify-self: center;
+    vertical-align: middle;
     h1 { color: $hotelblue;}
+  }
+  height: 59rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 51rem);
 }
 
 nav {
-  display: grid;
-  grid-template-rows: repeat(8, 1fr);
-  grid-column-gap: 20px;
+  width: 100%;
   position: fixed;
   top: 0;
-  background: $beige;
+  left: 0;
+  background: $blanc;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
   z-index: 999;
-  width: 100%;
-  li {
-    display: inline-block;
-    grid: 1/8;
-    font-size: 1.5rem; line-height: 2rem; text-transform: uppercase; letter-spacing: .1rem;
-    margin: 2rem;
+  ul {
+    // display: grid;
+    // grid-template-columns: repeat(6, 1fr);
+    // grid-column-gap: 20px;
+
+    .selected {
+      border-bottom: solid 3px $orange;
+    }
+
+    li {
+      display: inline-block;
+      font-size: 1.5rem; line-height: 2rem; text-transform: uppercase; letter-spacing: .1rem;
+      padding: 2rem;
+      text-align: center;
+    }
+    li:hover { color: $orange; border-bottom: solid 3px $orange;}
   }
 }
+
 
 article {
   // border: 3px solid crimson;

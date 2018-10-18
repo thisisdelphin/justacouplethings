@@ -48,34 +48,51 @@ p.date {
 }
 
 header {
-  background: #F6F1F1;
+  display: grid;
+  top: 7rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F6F1F1), to(rgba(246, 241, 241, 0.1))), url("../waves.jpg");
+  background-image: linear-gradient(to bottom, #F6F1F1, rgba(246, 241, 241, 0.1)), url("../waves.jpg");
+  background-size: cover;
   color: #5E5E5E;
-  padding: 48px;
+  height: 59rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 51rem);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 51rem);
 }
-header h1 {
+header .container {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  vertical-align: middle;
+}
+header .container h1 {
   color: #09B2BD;
 }
 
 nav {
-  display: grid;
-  grid-template-rows: repeat(8, 1fr);
-  grid-column-gap: 20px;
+  width: 100%;
   position: fixed;
   top: 0;
-  background: #F6F1F1;
+  left: 0;
+  background: #fff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
   z-index: 999;
-  width: 100%;
 }
-nav li {
+nav ul .selected {
+  border-bottom: solid 3px #FF5C00;
+}
+nav ul li {
   display: inline-block;
-  grid: 1/8;
   font-size: 1.5rem;
   line-height: 2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+nav ul li:hover {
+  color: #FF5C00;
+  border-bottom: solid 3px #FF5C00;
 }
 
 #alaune {
