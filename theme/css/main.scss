@@ -36,7 +36,7 @@ p {
 }
 p.date, p.surtitre { font-size: 1.5rem; line-height: 2rem; text-transform: uppercase; letter-spacing: .1rem;}
 .container {
-  max-width: 1150px;
+  max-width: 141rem;
   margin: 0 auto;
 }
 
@@ -124,23 +124,23 @@ article {
 
 #categories {
 
+  background: $blanc;
+
   .container {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 3rem;
+
     .cat {
 
       .intro {
-        background: $beige;
         color: $hotelblue;
         h1,h2,h3,h4,h5,h6 {
           color: $hotelblue;
         }
       }
-      background: $hotelblue;
-      color: $beige;
       h1,h2,h3,h4,h5,h6 {
-        color: $beige;
+        color: $anthracite;
       }
     }
   }
@@ -160,7 +160,7 @@ article {
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 3rem;
   }
 
   .intro {
@@ -188,17 +188,15 @@ article {
 #second-level {
 
   .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
   }
 
-  aside {
-    grid-column: 3 / 4;
-  }
 }
 
 #all-articles {
-  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
 }
 
 footer {

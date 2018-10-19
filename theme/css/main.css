@@ -46,7 +46,7 @@ p.date, p.surtitre {
 }
 
 .container {
-  max-width: 1150px;
+  max-width: 141rem;
   margin: 0 auto;
 }
 
@@ -143,24 +143,22 @@ nav .secondaryNav li:hover {
   grid-column: 1 / 3;
 }
 
+#categories {
+  background: #fff;
+}
 #categories .container {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  grid-column-gap: 20px;
-}
-#categories .container .cat {
-  background: #09B2BD;
-  color: #F6F1F1;
+  grid-column-gap: 3rem;
 }
 #categories .container .cat .intro {
-  background: #F6F1F1;
   color: #09B2BD;
 }
 #categories .container .cat .intro h1, #categories .container .cat .intro h2, #categories .container .cat .intro h3, #categories .container .cat .intro h4, #categories .container .cat .intro h5, #categories .container .cat .intro h6 {
   color: #09B2BD;
 }
 #categories .container .cat h1, #categories .container .cat h2, #categories .container .cat h3, #categories .container .cat h4, #categories .container .cat h5, #categories .container .cat h6 {
-  color: #F6F1F1;
+  color: #333;
 }
 
 #wanderlust {
@@ -180,7 +178,7 @@ nav .secondaryNav li:hover {
 #wanderlust .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 3rem;
 }
 #wanderlust .intro {
   grid-column: 1 / 3;
@@ -201,16 +199,10 @@ nav .secondaryNav li:hover {
   z-index: 2;
 }
 
-#second-level .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-#second-level aside {
-  grid-column: 3 / 4;
-}
-
 #all-articles {
-  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
 }
 
 footer {
