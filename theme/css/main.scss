@@ -111,11 +111,16 @@ article {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 3rem;
-    .date, .chapo {
+    .date {
+      grid-column: 8 / 13;
+      grid-row: 1 / 2;
+    }
+    .chapo {
       grid-column: 8 / 13;
     }
     h1 {
       grid-column: 7 / 13;
+      grid-row: 2 / 3;
       color: $anthracite;
     }
     button {
