@@ -7,6 +7,7 @@ body {
   font-size: 2rem;
   line-height: 3rem;
   font-family: 'Lato', sans-serif;
+  font-weight: Lato-Regular;
   background-color: #F6F1F1;
   color: #5E5E5E;
 }
@@ -170,10 +171,16 @@ nav .secondaryNav li:hover {
   grid-column-gap: 3rem;
 }
 #categories .container .cat .intro {
-  color: #09B2BD;
+  text-align: center;
 }
-#categories .container .cat .intro h1, #categories .container .cat .intro h2, #categories .container .cat .intro h3, #categories .container .cat .intro h4, #categories .container .cat .intro h5, #categories .container .cat .intro h6 {
-  color: #09B2BD;
+#categories .container .cat .intro .desc {
+  margin: 0 12rem;
+  color: rgba(78, 78, 78, 0.5);
+}
+#categories .container .cat .intro h3 {
+  color: #FF5C00;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 #categories .container .cat h1, #categories .container .cat h2, #categories .container .cat h3, #categories .container .cat h4, #categories .container .cat h5, #categories .container .cat h6 {
   color: #333;
