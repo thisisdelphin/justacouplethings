@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,700,900&subset=latin-ext");
-html {
-  font-size: 50%;
-}
-
 body {
   font-size: 2rem;
   line-height: 3rem;
@@ -12,8 +8,8 @@ body {
   color: #5E5E5E;
 }
 
-img {
-  width: 100%;
+html {
+  font-size: 50%;
 }
 
 h1 {
@@ -52,15 +48,42 @@ p.date, p.surtitre {
   letter-spacing: .1rem;
 }
 
-.container {
-  max-width: 141rem;
-  margin: 0 auto;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+a {
+  color: #FF5C00;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #FF5C00;
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
 }
 
 button {
   background: #09B2BD !important;
   color: #fff !important;
   padding: 1rem .5rem;
+}
+
+button:hover, button:active {
+  background: #07858D !important;
+}
+
+.wrapper {
+  background-color: #F6F1F1;
+}
+
+.container {
+  max-width: 141rem;
+  margin: 0 auto;
 }
 
 header {
@@ -71,8 +94,8 @@ header {
   background-size: cover;
   color: #5E5E5E;
   height: 59rem;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 51rem);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 51rem);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8vw));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8vw));
 }
 header .container {
   -ms-flex-item-align: center;
@@ -189,8 +212,8 @@ nav .secondaryNav li:hover {
 #travel {
   background: #30393D;
   color: #F6F1F1;
-  -webkit-clip-path: polygon(0 0, 100% 9rem, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 9rem, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 8vw, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 8vw, 100% 100%, 0 100%);
   margin-top: -7rem;
   padding-top: 12rem;
 }
@@ -282,19 +305,9 @@ nav .secondaryNav li:hover {
   grid-gap: 3rem;
 }
 
-footer {
-  background: SlateGray;
-  color: white;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-}
-
-a {
-  color: #FF5C00;
-  text-decoration: none;
+footer #bio .polygon {
+  -webkit-clip-path: polygon(0 0, 100% 8vw, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 8vw, 100% 100%, 0 100%);
 }
 
 /*# sourceMappingURL=main.css.map */

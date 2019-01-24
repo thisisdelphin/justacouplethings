@@ -33,19 +33,20 @@
 // }
 
 
+
+// COLORS
 $hotelblue: #09B2BD;
+$hotelblue-darker: #07858D;
 $orange: #FF5C00;
 $beige: #F6F1F1;
+$beige-darker: #EFE6E6;
 $blanc: #fff;
 $noir: #000;
 $anthracite: #333;
 $grey: #5E5E5E;
 $greyblue: #30393D;
 
-
-html {
-  font-size: 50%;
-}
+// GENERAL
 
 body {
   font-size: 2rem;
@@ -56,30 +57,65 @@ body {
   color: $grey;
 }
 
+// FONTS
+html { font-size: 50%;}
+h1 { font-size: 5rem; line-height: 6rem;}
+h2 { font-size: 4rem; line-height: 5rem;}
+h3 { font-size: 3rem; line-height: 4rem;}
+p { font-size: 2rem; line-height: 3rem;}
+p.surtitre { margin-bottom: 2rem; }
+p.chapo {line-height: 4rem; margin: 1rem 0; }
+p.date, p.surtitre { font-size: 1.5rem; line-height: 2rem; text-transform: uppercase; letter-spacing: .1rem;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+// ELEMENTS
+// links
+a { color: $orange; text-decoration: none;}
+a:hover, a:active { color: $orange; text-decoration: underline;}
+
+// images
 img {
   width: 100%;
 }
 
-h1 { font-size: 5rem; line-height: 6rem;}
-h2 { font-size: 4rem; line-height: 5rem;}
-h3 { font-size: 3rem; line-height: 4rem;}
-p {
-  font-size: 2rem;
-  line-height: 3rem;
-}
-p.surtitre { margin-bottom: 2rem; }
-p.chapo {line-height: 4rem; margin: 1rem 0; }
-p.date, p.surtitre { font-size: 1.5rem; line-height: 2rem; text-transform: uppercase; letter-spacing: .1rem;}
-.container {
-  max-width: 141rem;
-  margin: 0 auto;
-}
+// gallery
 
+// buttons
 button {
   background: $hotelblue!important;
   color: $blanc!important;
   padding: 1rem .5rem;
 }
+button:hover, button:active {
+  background: $hotelblue-darker !important;
+}
+
+.wrapper { background-color: $beige;}
+
+// RESPONSIVE GRID
+// mobile and small screens
+@media only screen and (max-width: 768px) {
+
+}
+
+// landscape tablets, laptops and medium desktops
+@media only screen and (min-width: 768px) {
+
+}
+
+// large desktops
+@media only screen and (min-width: 1440px) {
+  // .wrapper { width: 1440px; margin: 0 auto;}
+}
+
+.container {
+  max-width: 141rem;
+  margin: 0 auto;
+}
+
 
 header {
   display: grid;
@@ -94,7 +130,12 @@ header {
     h1 { color: $hotelblue;}
   }
   height: 59rem;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 51rem);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 8vw)
+  );
 }
 
 nav {
@@ -206,7 +247,12 @@ article {
   background: $greyblue;
   color: $beige;
   // height: 78rem;
-  clip-path: polygon(0 0, 100% 9rem, 100% 100%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    100% 8vw,
+    100% 100%,
+    0 100%
+  );
   margin-top: -7rem;
   padding-top: 12rem;
 
@@ -315,13 +361,15 @@ article {
   }
 }
 footer {
-  background: SlateGray;
-  color: white;
-}
+  #bio {
+    .polygon {
+      clip-path: polygon(
+        0 0,
+        100% 8vw,
+        100% 100%,
+        0 100%
+      );
+    }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
+  }
 }
-
-a { color: $orange; text-decoration: none;}
