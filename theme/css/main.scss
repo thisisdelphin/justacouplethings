@@ -134,7 +134,7 @@ header {
     0 0,
     100% 0,
     100% 100%,
-    0 calc(100% - 8vw)
+    0 calc(100% - 6vw)
   );
 }
 
@@ -249,7 +249,7 @@ article {
   // height: 78rem;
   clip-path: polygon(
     0 0,
-    100% 8vw,
+    100% 6vw,
     100% 100%,
     0 100%
   );
