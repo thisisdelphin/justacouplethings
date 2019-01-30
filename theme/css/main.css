@@ -63,14 +63,18 @@ a:hover, a:active {
   text-decoration: underline;
 }
 
-img {
-  width: 100%;
+.img-article {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 button {
   background: #09B2BD !important;
   color: #fff !important;
   padding: 1rem .5rem;
+  display: block !important;
+  margin: 1rem 0;
 }
 
 button:hover, button:active {
@@ -81,9 +85,193 @@ button:hover, button:active {
   background-color: #F6F1F1;
 }
 
+@media only screen and (max-width: 767px) {
+  button {
+    float: right;
+  }
+
+  .container {
+    margin: 0 2rem;
+  }
+
+  header {
+    height: 33rem;
+  }
+
+  #alaune {
+    padding-top: 3rem;
+  }
+  #alaune .date {
+    margin: 1rem 0;
+  }
+  #alaune h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  #travel {
+    margin-top: 8rem;
+    padding-top: 6rem;
+  }
+  #travel h1 {
+    margin-bottom: 2rem;
+  }
+  #travel .map img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  #alaune {
+    padding-top: 5rem;
+  }
+  #alaune .big {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 3rem;
+  }
+  #alaune .big .date {
+    grid-column: 8 / 13;
+    grid-row: 1 / 2;
+  }
+  #alaune .big .chapo {
+    grid-column: 8 / 13;
+  }
+  #alaune .big h1 {
+    grid-column: 7 / 13;
+    grid-row: 2 / 3;
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+  #alaune .big .image {
+    grid-column: 1 / 8;
+    grid-row: 1 / 5;
+  }
+
+  #travel {
+    margin-top: -7rem;
+    padding-top: 12rem;
+  }
+  #travel .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 3rem;
+  }
+  #travel .container h2 {
+    grid-column: 1 / 7;
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+  #travel .container .desc {
+    grid-column: 1 / 5;
+  }
+  #travel .container .map {
+    grid-column: 1 / 7;
+    display: grid;
+  }
+  #travel .container .map img {
+    grid-column: 1 / 6;
+    grid-row: 1 / 5;
+    margin-left: -6rem;
+    opacity: 0.2;
+  }
+  #travel .container .map button {
+    z-index: 1000;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  #travel .container .video {
+    grid-column: 7 / 13;
+    grid-row: 2 / 4;
+  }
+  #travel .container .video img {
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  #alaune {
+    padding-top: 5rem;
+  }
+  #alaune .big {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 3rem;
+  }
+  #alaune .big .date {
+    grid-column: 8 / 13;
+    grid-row: 1 / 2;
+  }
+  #alaune .big .chapo {
+    grid-column: 8 / 13;
+  }
+  #alaune .big h1 {
+    grid-column: 7 / 13;
+    grid-row: 2 / 3;
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+  #alaune .big .image {
+    grid-column: 1 / 8;
+    grid-row: 1 / 5;
+  }
+
+  #travel {
+    margin-top: -7rem;
+    padding-top: 12rem;
+  }
+  #travel .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 3rem;
+  }
+  #travel .container h2 {
+    grid-column: 1 / 7;
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+  #travel .container .desc {
+    grid-column: 1 / 5;
+  }
+  #travel .container .map {
+    grid-column: 1 / 7;
+    display: grid;
+  }
+  #travel .container .map img {
+    grid-column: 1 / 6;
+    grid-row: 1 / 5;
+    margin-left: -12rem;
+    opacity: 0.2;
+  }
+  #travel .container .map button {
+    z-index: 1000;
+    grid-row: 1 / 4;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  #travel .container .video {
+    grid-column: 7 / 13;
+    grid-row: 2 / 4;
+  }
+  #travel .container .video img {
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  }
+}
 .container {
   max-width: 141rem;
-  margin: 0 auto;
 }
 
 header {
@@ -156,33 +344,33 @@ nav .secondaryNav li:hover {
 }
 
 #alaune {
-  padding-top: 5rem;
   z-index: 50;
   position: relative;
 }
-#alaune .big {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 3rem;
+#alaune .date {
+  color: rgba(51, 51, 51, 0.5);
 }
-#alaune .big .date {
-  grid-column: 8 / 13;
-  grid-row: 1 / 2;
-}
-#alaune .big .chapo {
-  grid-column: 8 / 13;
-}
-#alaune .big h1 {
-  grid-column: 7 / 13;
-  grid-row: 2 / 3;
+#alaune h1 {
   color: #333;
 }
-#alaune .big button {
-  grid-column: 8 / 10;
+
+#travel {
+  background: #30393D;
+  color: #F6F1F1;
+  -webkit-clip-path: polygon(0 0, 100% 6vw, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 6vw, 100% 100%, 0 100%);
 }
-#alaune .big img {
-  grid-column: 1 / 8;
-  grid-row: 1 / 5;
+#travel h1 {
+  color: #FF7A2F;
+}
+#travel .desc {
+  color: #F6F1F1;
+}
+#travel .video img {
+  border-radius: 0.5rem;
+}
+#travel button {
+  background-color: #FF5C00 !important;
 }
 
 #categories {
@@ -207,49 +395,6 @@ nav .secondaryNav li:hover {
 }
 #categories .container .cat h1, #categories .container .cat h2, #categories .container .cat h3, #categories .container .cat h4, #categories .container .cat h5, #categories .container .cat h6 {
   color: #333;
-}
-
-#travel {
-  background: #30393D;
-  color: #F6F1F1;
-  -webkit-clip-path: polygon(0 0, 100% 6vw, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 6vw, 100% 100%, 0 100%);
-  margin-top: -7rem;
-  padding-top: 12rem;
-}
-#travel h2 {
-  color: #FF5C00;
-  font-size: 7rem;
-  line-height: 8rem;
-}
-#travel .container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 3rem;
-}
-#travel .container h2 {
-  grid-column: 1 / 7;
-}
-#travel .container .desc {
-  grid-column: 1 / 5;
-  color: #F6F1F1;
-  opacity: 0.5;
-}
-#travel .container .map {
-  grid-column: 1 / 7;
-}
-#travel .container .map img {
-  margin-left: -12rem;
-  opacity: 0.2;
-}
-#travel .container .video {
-  grid-column: 7 / 13;
-  grid-row: 2 / 4;
-}
-#travel .container .video img {
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 #second-level {
