@@ -74,7 +74,7 @@
             <img src="image.png" alt="Image">
             <button type="button" name="button">Lire la vidéo</button>
             <div class="content">
-              <h3>Un Noël à New-York</h3>
+              <h1>Un Noël à New-York</h1>
               <p class="date">5:03 | 18 septembre 2018</p>
             </div>
           </article>

@@ -23,8 +23,8 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 4rem;
+  line-height: 5rem;
 }
 
 p {
@@ -64,8 +64,7 @@ a:hover, a:active {
 }
 
 .img-article {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
 }
 
@@ -86,10 +85,6 @@ button:hover, button:active {
 }
 
 @media only screen and (max-width: 767px) {
-  button {
-    float: right;
-  }
-
   .container {
     margin: 0 2rem;
   }
@@ -118,6 +113,9 @@ button:hover, button:active {
   }
   #travel .map img {
     display: none;
+  }
+  #travel .video {
+    display: block;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
@@ -183,16 +181,11 @@ button:hover, button:active {
     z-index: 1000;
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
   }
   #travel .container .video {
     grid-column: 7 / 13;
     grid-row: 2 / 4;
-  }
-  #travel .container .video img {
-    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -258,16 +251,14 @@ button:hover, button:active {
     grid-row: 1 / 4;
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
   }
   #travel .container .video {
     grid-column: 7 / 13;
     grid-row: 2 / 4;
   }
   #travel .container .video img {
-    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
   }
 }
 .container {
@@ -277,17 +268,14 @@ button:hover, button:active {
 header {
   display: grid;
   top: 7rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#F6F1F1), to(rgba(246, 241, 241, 0.1))), url("../waves.jpg");
   background-image: linear-gradient(to bottom, #F6F1F1, rgba(246, 241, 241, 0.1)), url("../waves.jpg");
   background-size: cover;
   color: #5E5E5E;
   height: 59rem;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
 }
 header .container {
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   justify-self: center;
   vertical-align: middle;
 }
@@ -301,8 +289,7 @@ nav {
   top: 0;
   left: 0;
   background: #fff;
-  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
 nav ul {
@@ -357,8 +344,7 @@ nav .secondaryNav li:hover {
 #travel {
   background: #30393D;
   color: #F6F1F1;
-  -webkit-clip-path: polygon(0 0, 100% 6vw, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 6vw, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 6vw, 100% 100%, 0 100%);
 }
 #travel h1 {
   color: #FF7A2F;
@@ -366,8 +352,31 @@ nav .secondaryNav li:hover {
 #travel .desc {
   color: #F6F1F1;
 }
+#travel .video {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#travel .video .surtitre {
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+}
 #travel .video img {
   border-radius: 0.5rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  grid-row: 2 / 5;
+  grid-column: 1 / 4;
+}
+#travel .video button {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+#travel .video .content {
+  text-align: center;
+  grid-row: 5 / 6;
+  grid-column: 1 / 4;
+}
+#travel .video .content h3 {
+  color: #09B2BD;
 }
 #travel button {
   background-color: #FF5C00 !important;
@@ -411,9 +420,7 @@ nav .secondaryNav li:hover {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 1rem;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  align-items: end;
 }
 #all-articles .article img {
   grid-column: 3/6;
@@ -423,8 +430,7 @@ nav .secondaryNav li:hover {
 #all-articles .article .align-bottom {
   grid-column: 1/4;
   grid-row: 1 / 2;
-  -ms-flex-item-align: end;
-      align-self: end;
+  align-self: end;
 }
 #all-articles .article .align-bottom h1 {
   color: #333;
@@ -451,8 +457,7 @@ nav .secondaryNav li:hover {
 }
 
 footer #bio .polygon {
-  -webkit-clip-path: polygon(0 0, 100% 8vw, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 8vw, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 8vw, 100% 100%, 0 100%);
 }
 
 /*# sourceMappingURL=main.css.map */

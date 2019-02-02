@@ -1,95 +1,58 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\000033}}
 #alaune .surtitre {
-  grid-area: surtitre;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\000034}}
+  grid-area: surtitre; }
 #alaune article {
-  grid-area: article;
-}
+  grid-area: article; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000310}}
 #travel {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: "title" "desc" "map" "video";
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000311}}
-#travel h2 {
-  grid-area: title;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000312}}
-#travel .desc {
-  grid-area: desc;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000313}}
-#travel .map {
-  grid-area: map;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000314}}
-#travel .video {
-  grid-area: video;
-}
+  grid-template-areas: "title" "desc" "map" "video"; }
+  #travel h2 {
+    grid-area: title; }
+  #travel .desc {
+    grid-area: desc; }
+  #travel .map {
+    grid-area: map; }
+  #travel .video {
+    grid-area: video; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000325}}
 #second-level {
-  grid-area: second-level;
-}
+  grid-area: second-level; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000327}}
 #categories {
-  grid-area: categories;
-}
+  grid-area: categories; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000329}}
 footer {
-  grid-area: footer;
-}
+  grid-area: footer; }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000333}}
   #travel {
     grid-template-columns: 1fr;
-    grid-template-areas: "title" "desc" "map" "video";
-  }
-}
+    grid-template-areas: "title" "desc" "map" "video"; } }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000345}}
   #travel {
     grid-template-columns: 1fr;
-    grid-template-areas: "title" "desc" "map" "video";
-  }
-}
+    grid-template-areas: "title" "desc" "map" "video"; } }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000357}}
   #travel {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title video" "desc video" "map video";
-  }
-}
+    grid-template-areas: "title video" "desc video" "map video"; } }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000368}}
   #travel {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title video" "desc video" "map video";
-  }
-}
+    grid-template-areas: "title video" "desc video" "map video"; } }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1440px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000379}}
   .wrapper {
     width: 1440px;
-    margin: 0 auto;
-  }
+    margin: 0 auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Git\/justacouplethings\/theme\/css\/main2\.scss}line{font-family:\0000380}}
   #travel {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title video" "desc video" "map video";
-  }
-}
+    grid-template-areas: "title video" "desc video" "map video"; } }
 
 /*# sourceMappingURL=main2.css.map */
