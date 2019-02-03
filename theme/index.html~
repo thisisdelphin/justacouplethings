@@ -44,17 +44,19 @@
       <section id="alaune">
         <div class="container">
           <p class="surtitre">à la une</p>
+          <a href="" class="link-article">
           <article class="big">
             <div class="image">
               <img src="image.png" alt="Image" class="img-article">
             </div>
-            <p class="date"><a href="">Lifestyle</a> | 21 janvier 2018 | 2 commentaires</p>
+            <p class="date"><span class="categorie">Lifestyle</span> | 21 janvier 2018 | 2 commentaires</p>
             <h1>Test de la marque de maquillage Zao</h1>
             <p class="chapo">
               Bien le bonjour toi ! Aujourd’hui je débarque dans le section make up pour te parler de la marque Zao. Laisse moi te convraincre en 4 mots de te pencher sur cette jolie compagnie : naturel, bio, vegan et rechargeable.
               <button type="button" name="button">Lire l'article</button>
             </p>
           </article>
+          </a>
         </div>
       </section>
 
@@ -69,15 +71,16 @@
             <img src="map.png" alt="">
             <button type="button" name="button">Voir toutes les destinations</button>
           </div>
+          <a href="" class="link-article">
           <article class="video">
-            <p class="surtitre">Dernière vidéo</p>
             <img src="image.png" alt="Image">
             <button type="button" name="button">Lire la vidéo</button>
             <div class="content">
-              <h1>Un Noël à New-York</h1>
+              <h3>Un Noël à New-York</h3>
               <p class="date">5:03 | 18 septembre 2018</p>
             </div>
           </article>
+          </a>
         </div>
       </section>
 
