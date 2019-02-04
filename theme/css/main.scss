@@ -80,12 +80,12 @@ a { color: $orange; text-decoration: none;}
 a:hover, a:active { color: $orange; text-decoration: underline;}
 
 .link-article { color: inherit; }
-.link-article:hover, .link-article:active { 
-  color: inherit; 
-  text-decoration: none; 
+.link-article:hover, .link-article:active {
+  color: inherit;
+  text-decoration: none;
   h1 {
-    color: $hotelblue!important; transition: .25s; 
-  } 
+    color: $hotelblue!important; transition: .25s;
+  }
 }
 
 span.categorie { color: $orange; }
@@ -115,7 +115,7 @@ button:hover, button:active {
 
 // RESPONSIVE GRID
 // mobile and small screens
-@media only screen and (max-width: 767px) {
+@media screen (max-width: 767px) {
   button {
     // float: right;
   }
