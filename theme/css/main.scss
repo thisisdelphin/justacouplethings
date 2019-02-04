@@ -115,7 +115,7 @@ button:hover, button:active {
 
 // RESPONSIVE GRID
 // mobile and small screens
-@media screen (max-width: 767px) and (orientation: portrait) {
+@media screen and (max-width: 767px) and (orientation: portrait) {
   button {
     // float: right;
   }
