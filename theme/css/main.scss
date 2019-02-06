@@ -35,19 +35,19 @@
 
 
 // COLORS
-$hotelblue: #09B2BD;
-$hotelblue-darker: #07858D;
-$orange: #FF5C00;
-$orange-lighter: #FF7A2F;
-$beige: #F6F1F1;
-$beige-darker: #EFE6E6;
-$beige50: rgba(246,241,241,0.5);
-$blanc: #fff;
-$noir: #000;
-$anthracite: #333;
-$grey: #5E5E5E;
-$grey50: rgba(51, 51, 51, 0.5);
-$greyblue: #30393D;
+$PrimaryColor: #09B2BD;
+$PrimaryColor-darker: #07858D;
+$SecondaryColor: #FF5C00;
+$SecondaryColor-lighter: #FF7A2F;
+$BackgroundColor: #F6F1F1;
+$BackgroundColor-darker: #EFE6E6;
+$BackgroundColor50: rgba(246,241,241,0.5);
+$White: #fff;
+$Black: #000;
+$TitleColor: #333;
+$TextColor: #5E5E5E;
+$TextColor50: rgba(51, 51, 51, 0.5);
+$BackgroundVideo: #30393D;
 
 // GENERAL
 
@@ -56,8 +56,8 @@ body {
   line-height: 3rem;
   font-family: 'Lato', sans-serif;
   font-weight: Lato-Regular;
-  background-color: $beige;
-  color: $grey;
+  background-color: $BackgroundColor;
+  color: $TextColor;
 }
 
 // FONTS
@@ -76,19 +76,19 @@ h1, h2, h3, h4, h5, h6 {
 
 // ELEMENTS
 // links
-a { color: $orange; text-decoration: none;}
-a:hover, a:active { color: $orange; text-decoration: underline;}
+a { color: $SecondaryColor; text-decoration: none;}
+a:hover, a:active { color: $SecondaryColor; text-decoration: underline;}
 
 .link-article { color: inherit; }
 .link-article:hover, .link-article:active {
   color: inherit;
   text-decoration: none;
   h1 {
-    color: $hotelblue!important; transition: .25s;
+    color: $PrimaryColor!important; transition: .25s;
   }
 }
 
-span.categorie { color: $orange; }
+span.categorie { color: $SecondaryColor; }
 // images
 .img-article {
   object-fit: cover;
@@ -99,8 +99,8 @@ span.categorie { color: $orange; }
 
 // buttons
 button {
-  background: $hotelblue!important;
-  color: $blanc!important;
+  background: $PrimaryColor!important;
+  color: $White!important;
   padding: 1rem .5rem;
   display: block!important;
   margin: 1rem 0;
@@ -108,19 +108,31 @@ button {
   line-height: 3rem;
 }
 button:hover, button:active {
-  background: $hotelblue-darker !important;
+  background: $PrimaryColor-darker !important;
 }
 
-.wrapper { background-color: $beige;}
+.wrapper { background-color: $BackgroundColor;}
 
 // RESPONSIVE GRID
 // mobile and small screens
-@media screen and (max-width: 767px) and (orientation: portrait) {
-  button {
-    // float: right;
-  }
+@media only screen and (max-width: 767px) and (orientation: portrait) {
   .container {
     margin: 0 2rem;
+  }
+  nav {
+    height: 100%;
+    width: 100%;
+    ul {
+      li {
+        margin: 2rem 0;
+        width: 100%;
+        display: block!important;
+        border: none!important;
+      }
+      li:hover, li:active {
+        background: $BackgroundColor-darker;
+      }
+    }
   }
   header {
     height: 33rem;
@@ -170,7 +182,7 @@ button:hover, button:active {
         h1 {
           font-size: 4rem;
           line-height: 5rem;
-          color: $anthracite;
+          color: $TitleColor;
           margin-bottom: 0!important;
         }
       .date { margin-top: 1rem; }
@@ -193,6 +205,13 @@ button:hover, button:active {
   .container {
     margin: 0 auto;
     padding: 0 2rem;
+  }
+  nav {
+    ul {
+      li {
+        margin: 0 1rem;
+      }
+    }
   }
   #alaune {
     padding-top: 5rem;
@@ -240,16 +259,17 @@ button:hover, button:active {
         grid-column: 1 / 7;
         display: grid;
         img {
-          grid-column: 1 / 6;
-          grid-row: 1 / 5;
-          margin-left: -6rem;
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+          margin-left: -3rem;
           opacity: 0.2;
         }
         button {
           z-index: 1000;
-          grid-column: 2 / 4;
-          grid-row: 2 / 3;
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
           align-self: center;
+          justify-self: center;
         }
       }
       .second-col {
@@ -280,17 +300,18 @@ button:hover, button:active {
         grid-row: 1 / 2;
         align-self: end;
         h1 {
-          color: $anthracite;
+          color: $TitleColor;
           margin-bottom: 0!important;
         }
       .date { margin-top: 1rem; }
       }
 
       .chapo {
-        grid-column: 1/6;
+        grid-column: 1 / 6;
       }
       button {
-        grid-column: 4/6;
+        grid-column: 4 / 6;
+        justify-self: end;
       }
     }
   }
@@ -302,6 +323,13 @@ button:hover, button:active {
 @media only screen and (min-width: 1440px) {
   .container {
     margin: 0 auto;
+  }
+  nav {
+    ul {
+      li {
+        margin: 0 2rem;
+      }
+    }
   }
   #alaune {
     padding-top: 5rem;
@@ -349,17 +377,17 @@ button:hover, button:active {
         grid-column: 1 / 7;
         display: grid;
         img {
-          grid-column: 1 / 6;
-          grid-row: 1 / 5;
-          margin-left: -12rem;
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+          margin-left: -6rem;
           opacity: 0.2;
         }
         button {
           z-index: 1000;
-          grid-row: 1 / 4;
-          grid-column: 2 / 4;
-          grid-row: 2 / 3;
+          grid-row: 1 / 2;
+          grid-column: 1 / 2;
           align-self: center;
+          justify-self: center;
         }
       }
       .second-col {
@@ -387,7 +415,6 @@ button:hover, button:active {
       img {
         grid-column: 3 / 6;
         grid-row: 1 / 2;
-        // height: 32rem;
       }
 
       .align-bottom {
@@ -395,7 +422,7 @@ button:hover, button:active {
         grid-row: 1 / 2;
         align-self: end;
         h1 {
-          color: $anthracite;
+          color: $TitleColor;
           margin-bottom: 0!important;
         }
       .date { margin-top: 1rem; }
@@ -419,14 +446,14 @@ button:hover, button:active {
 header {
   display: grid;
   top: 7rem;
-  background-image: linear-gradient(to bottom, $beige, rgba(246, 241, 241, 0.1)), url("../waves.jpg");
+  background-image: linear-gradient(to bottom, $BackgroundColor, rgba(246, 241, 241, 0.1)), url("../waves.jpg");
   background-size: cover;
-  color: $grey;
+  color: $TextColor;
   .container {
     align-self: center;
     justify-self: center;
     vertical-align: middle;
-    h1 { color: $hotelblue;}
+    h1 { color: $PrimaryColor;}
   }
   height: 59rem;
   clip-path: polygon(
@@ -442,7 +469,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background: $blanc;
+  background: $White;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
   z-index: 999;
   ul {
@@ -453,35 +480,34 @@ nav {
       display: inline-block;
       font-size: 1.5rem; line-height: 2rem; text-transform: uppercase; letter-spacing: .1rem;
       padding: 2rem 0;
-      margin: 0 2rem;
       text-align: center;
     }
   }
   .primaryNav {
-    color: $anthracite;
+    color: $TitleColor;
     float: left;
-    .selected { border-bottom: solid 3px $orange; }
-    li:hover { color: $orange; border-bottom: solid 3px $orange;}
+    .selected { border-bottom: solid 3px $SecondaryColor; }
+    li:hover { color: $SecondaryColor; border-bottom: solid 3px $SecondaryColor;}
   }
   .secondaryNav {
-    color: $grey50;
+    color: $TextColor50;
     float: right;
-    .selected { border-bottom: solid 3px $anthracite; }
-    li:hover { color: $anthracite; border-bottom: solid 3px $anthracite;}
+    .selected { border-bottom: solid 3px $TitleColor; }
+    li:hover { color: $TitleColor; border-bottom: solid 3px $TitleColor;}
   }
 }
 
 #alaune {
   z-index: 50;
   position: relative;
-  .date {color: $grey50;}
-  h1 {color: $anthracite;}
+  .date {color: $TextColor50;}
+  h1 {color: $TitleColor;}
 
 }
 
 #travel {
-  background: $greyblue;
-  color: $beige;
+  background: $BackgroundVideo;
+  color: $BackgroundColor;
   clip-path: polygon(
     0 0,
     100% 6vw,
@@ -489,45 +515,46 @@ nav {
     0 100%
   );
 
-  h1 { color: $orange-lighter;}
-  .desc { color: $beige;}
+  h1 { color: $SecondaryColor-lighter;}
+  .desc { color: $BackgroundColor;}
 
   .video {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
 
     .surtitre {
       grid-row: 1 / 2;
-      grid-column: 1 / 4;
+      grid-column: 1 / 2;
     }
     img {
       border-radius: 0.5rem;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-      grid-row: 2 / 5;
-      grid-column: 1 / 4;
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
     }
     button {
-      grid-row: 3 / 4;
-      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      align-self: center;
+      justify-self: center;
     }
     .content {
       text-align: center;
 
-      grid-row: 5 / 6;
-      grid-column: 1 / 4;
+      grid-row: 3 / 4;
+      grid-column: 1 / 2;
 
       h3 {
         margin-top: 1rem;
-        color: $hotelblue;
+        color: $PrimaryColor;
       }
     }
   }
   .video:hover, .video:active {
     transition: .25s;
-    h3 { color: $blanc; }
+    h3 { color: $White; }
   }
-  button { background-color: $orange!important; }
-  button:hover, button:active { background-color: $orange-lighter!important; }
+  button { background-color: $SecondaryColor!important; }
+  button:hover, button:active { background-color: $SecondaryColor-lighter!important; }
 }
 
 #second-level {
@@ -549,7 +576,7 @@ nav {
 
 #categories {
 
-  background: $blanc;
+  background: $White;
 
   .container {
     display: grid;
@@ -565,13 +592,13 @@ nav {
           color:rgba(78, 78, 78, .5);
         }
         h3 {
-          color: $orange;
+          color: $SecondaryColor;
           font-size: 4rem;
           line-height: 4rem;
         }
       }
       h1,h2,h3,h4,h5,h6 {
-        color: $anthracite;
+        color: $TitleColor;
       }
     }
   }
