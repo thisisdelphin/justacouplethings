@@ -120,29 +120,30 @@ button:hover, button:active {
     margin: 0 2rem;
   }
   nav {
-    height: 100%;
-    width: 100%;
-    .container { margin: 0; }
-    .menuTop {
-      p.surtitre {
-        text-align: center;
-        font-weight: 700;
-        font-size: 2rem;
-      }
-    }
-    ul {
-      width: 100%;
-      padding: 2rem;
-      li {
-        margin: 2rem 0;
-        width: 100%;
-        display: block!important;
-        border: none!important;
-      }
-      li:hover, li:active {
-        background: $BackgroundColor;
-      }
-    }
+    display: none;
+  //   height: 100%;
+  //   width: 100%;
+  //   .container { margin: 0; }
+  //   .menuTop {
+  //     p.surtitre {
+  //       text-align: center;
+  //       font-weight: 700;
+  //       font-size: 2rem;
+  //     }
+  //   }
+  //   ul {
+  //     width: 100%;
+  //     padding: 2rem;
+  //     li {
+  //       margin: 2rem 0;
+  //       width: 100%;
+  //       display: block!important;
+  //       border: none!important;
+  //     }
+  //     li:hover, li:active {
+  //       background: $BackgroundColor;
+  //     }
+  //   }
   }
   header {
     height: 33rem;
@@ -476,18 +477,27 @@ header {
   );
 }
 
+.pastHero {
+  background: $White;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+  .primaryNav {
+    li:first-child { display: inline-block; }
+  }
+}
 nav {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background: $White;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+  background: rgba(0,0,0,0);
+  transition: .25s;
+
   z-index: 999;
   ul {
     display: inline-block;
     margin-bottom: 0;
     padding:0;
+
     li {
       display: inline-block;
       font-size: 1.5rem; line-height: 2rem; text-transform: uppercase; letter-spacing: .1rem;
@@ -498,6 +508,7 @@ nav {
   .primaryNav {
     color: $TitleColor;
     float: left;
+    li:first-child { display: none; transition: .5s; }
     .selected { border-bottom: solid 3px $SecondaryColor; }
     li:hover { color: $SecondaryColor; border-bottom: solid 3px $SecondaryColor;}
   }

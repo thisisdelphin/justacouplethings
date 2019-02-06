@@ -109,29 +109,7 @@ button:hover, button:active {
   }
 
   nav {
-    height: 100%;
-    width: 100%;
-  }
-  nav .container {
-    margin: 0;
-  }
-  nav .menuTop p.surtitre {
-    text-align: center;
-    font-weight: 700;
-    font-size: 2rem;
-  }
-  nav ul {
-    width: 100%;
-    padding: 2rem;
-  }
-  nav ul li {
-    margin: 2rem 0;
-    width: 100%;
-    display: block !important;
-    border: none !important;
-  }
-  nav ul li:hover, nav ul li:active {
-    background: #F6F1F1;
+    display: none;
   }
 
   header {
@@ -456,13 +434,21 @@ header .container h1 {
   color: #09B2BD;
 }
 
+.pastHero {
+  background: #fff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.pastHero .primaryNav li:first-child {
+  display: inline-block;
+}
+
 nav {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background: #fff;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0);
+  transition: .25s;
   z-index: 999;
 }
 nav ul {
@@ -482,6 +468,10 @@ nav ul li {
 nav .primaryNav {
   color: #333;
   float: left;
+}
+nav .primaryNav li:first-child {
+  display: none;
+  transition: .5s;
 }
 nav .primaryNav .selected {
   border-bottom: solid 3px #FF5C00;
