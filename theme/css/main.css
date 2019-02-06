@@ -112,6 +112,12 @@ button:hover, button:active {
     height: 100%;
     width: 100%;
   }
+  nav .container {
+    margin: 0;
+  }
+  nav ul {
+    width: 100%;
+  }
   nav ul li {
     margin: 2rem 0;
     width: 100%;

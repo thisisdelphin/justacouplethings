@@ -122,7 +122,10 @@ button:hover, button:active {
   nav {
     height: 100%;
     width: 100%;
+    .container { margin: 0; }
     ul {
+      width: 100%;
+      
       li {
         margin: 2rem 0;
         width: 100%;
