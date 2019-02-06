@@ -117,6 +117,7 @@ button:hover, button:active {
   }
   nav ul {
     width: 100%;
+    padding: 2rem;
   }
   nav ul li {
     margin: 2rem 0;
