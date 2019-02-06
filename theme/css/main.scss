@@ -123,6 +123,13 @@ button:hover, button:active {
     height: 100%;
     width: 100%;
     .container { margin: 0; }
+    .menuTop {
+      p.surtitre {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+      }
+    }
     ul {
       width: 100%;
       padding: 2rem;
@@ -210,6 +217,7 @@ button:hover, button:active {
     padding: 0 2rem;
   }
   nav {
+    .menuTop { display: none; }
     ul {
       li {
         margin: 0 1rem;
@@ -328,6 +336,7 @@ button:hover, button:active {
     margin: 0 auto;
   }
   nav {
+    .menuTop { display: none; }
     ul {
       li {
         margin: 0 2rem;
